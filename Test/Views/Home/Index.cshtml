@@ -1,0 +1,16 @@
+﻿
+@using Test.ViewModels;
+@model HomeVM
+
+
+<p>home/index</p>
+
+<p>@Model.Group.Name</p>
+
+@foreach(var item in Model.Students)
+{
+    <p>@item.Id</p>
+    <p>@item.Name</p>
+    <p>@item.Surname</p>
+    <hr/>
+}
